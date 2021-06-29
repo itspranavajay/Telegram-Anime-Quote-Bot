@@ -1,5 +1,5 @@
 # Anime Quote
-Telegram Anime Quote bot Written In Python.
+Telegram Anime Quote bot Written In Pyrogram.
 
 
 
