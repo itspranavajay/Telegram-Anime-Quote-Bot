@@ -1,0 +1,7 @@
+aiohttp
+pyrogram
+TgCrypto
+requests
+asyncio
+python-rapidjson>=0.9.3
+Pillow>=4.2.0
