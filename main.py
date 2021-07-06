@@ -11,9 +11,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 anime = Client(
     ":memory:",
-    bot_token="token",
-    api_id=266226,
-    api_hash="api hash",
+    bot_token="1688991183:AAE5Y2HIroqZKRRggWci4ofkdevdEnMf4ec",
+    api_id=2114829,
+    api_hash="e90ddf1f46ac58ee0c267eff1e0548de",
 )
 
 
