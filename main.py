@@ -6,6 +6,7 @@ import asyncio
 import re
 from config import bot_token
 from pyrogram import Client, filters
+from pyrogram.types import Message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
@@ -47,6 +48,7 @@ async def start(_, message):
 def quote(_, message):
     quote = requests.get("https://animechan.vercel.app/api/random").json()
     await message.reply_text('`'+quote['quote']+'`\n '+quote['anime']+' (In '+q['character']+')')
+
 print(
     """
 Please Follow MoeZilla 👀✨
