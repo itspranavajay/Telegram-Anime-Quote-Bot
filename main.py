@@ -56,5 +56,5 @@ Please Follow MoeZilla 👀✨
 )
 
 
-eliana.run()
+anime.run()
 
