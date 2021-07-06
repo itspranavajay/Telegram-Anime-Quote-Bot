@@ -33,7 +33,7 @@ Hi, I'm Anime Quotes bot
 
 @anime.on_message(filters.command(["start"], prefixes=["/", "!"]))
 async def start(_, message):
-    self = await eliana.get_me()
+    self = await anime.get_me()
     busername = self.username
     if message.chat.type != "private":
         await message.reply_text(messagegroup)
