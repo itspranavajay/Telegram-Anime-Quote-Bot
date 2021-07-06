@@ -47,7 +47,7 @@ async def start(_, message):
 @anime.on_message(filters.command("quote"))
 def quote(_, message):
     quote = requests.get("https://animechan.vercel.app/api/random").json()
-    message.reply_text('`'+quote['quote']+'`\n '+quote['anime']+' (In '+quote['character']+')')
+    message.reply_text('`'❝+quote['quote']+'`\n '+quote['anime']+' In '+quote['character']+')
 
 print(
     """
