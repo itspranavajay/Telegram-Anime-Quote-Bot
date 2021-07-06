@@ -44,15 +44,14 @@ async def start(_, message):
 
 
 @anime.on_message(filters.command("quote"))
-def truth(_, message):
+def quote(_, message):
     quote = requests.get("https://animechan.vercel.app/api/random").json()
-    quote = quote.get("quote")
-    message.reply_text(quote)
+    await message.reply_text('`'+quote['quote']+'`\n '+quote['character']+'`\n '+quote['anime']+')
 
 print(
     """
 Please Follow MoeZilla 👀✨
-"""
+""" 
 )
 
 
