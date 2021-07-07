@@ -47,9 +47,9 @@ async def start(_, message):
 @anime.on_message(filters.command("quote"))
 def quote(_, message):
     quote = requests.get("https://animechan.vercel.app/api/random").json()
-    buttons = [[InlineKeyboardButton("Change", callback_data="quote"),
+    buttons2 = [[InlineKeyboardButton("Change", callback_data="quote"),
                     ]]
-    message.reply_text('`'+quote['quote']+'`\n '+quote['anime']+' (In '+quote['character']+')'), reply_markup=InlineKeyboardMarkup(buttons))
+    message.reply_text('`'+quote['quote']+'`\n '+quote['anime']+' (In '+quote['character']+')'), reply_markup=InlineKeyboardMarkup(buttons2))
 
 @anime.on_callback_query(filters.regex(pattern=r"^quote$"))
 async def quote(client:Client, callback_query:CallbackQuery):
